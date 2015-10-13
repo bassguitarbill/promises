@@ -1,0 +1,22 @@
+#display>div {
+	height: 50px;
+	width: 50px;
+	border: solid 4px black;
+	display: inline-block;
+}
+
+.line  {
+	height: 0px !important;
+	margin-top: 25px;
+}
+
+#votes {
+	height: 300px !important;
+	width: 70px !important;
+}
+
+#votes>div {
+	height: 50px;
+	width: 50px;
+	border: solid 4px black;
+}

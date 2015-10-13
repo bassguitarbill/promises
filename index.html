@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Promises</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src='index.js'></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<input id="button1" type="button" value="Start it!" />
+		<div id='display'>
+			<div id='ws'>&nbsp;</div>
+			<div class='line'>&nbsp;</div>
+			<div id='parse'>&nbsp;</div>
+			<div class='line'>&nbsp;</div>
+			<div id='votes'>
+				<div id='Arthur'>&nbsp;</div>
+				<div id='Brittney'>&nbsp;</div>
+				<div id='Chaz'>&nbsp;</div>
+				<div id='Diego'>&nbsp;</div>
+				<div id='Ellen'>&nbsp;</div>
+			</div>
+			<div class='line'>&nbsp;</div>
+			<div id='tally'>&nbsp;</div>
+		</div>
+		<div id='result'></div>
+	</body>
+	<script type="application/json" id="votingData">
+		{ "data" :
+			{ "votes" : 
+				[ 	{ "voter": "Arthur", "selection": "A"},
+					{ "voter": "Brittney", "selection": "A"},
+					{ "voter": "Chaz", "selection": "C"},
+					{ "voter": "Diego", "selection": "B"},
+					{ "voter": "Ellen", "selection": "A"}
+				]
+			,
+			 "candidates" : 
+				[	{ "id": "A", "name": "Brittney Horowitz"},
+					{ "id": "B", "name": "Diego Armando"}
+				]
+			}
+		}		
+	</script>
+</html>
